@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+.root {
+    --text-color: #333;
+    --border-color: #dbdbdb;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header */
+.header__account {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 4px;
+    color: var(--text-color);
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.header__cart {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: var(--text-color);
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+/* Account: Content user header */
+
+.content__user__head-home {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        cursor: pointer;
+
+    }
 }
 
-.App-link {
-  color: #61dafb;
+.content__user__head-home a {
+    color: black;
+
+    &:hover {
+        color: #1677ff;
+    }
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Footer */
+
+.footer__product__list__item a {
+    color: black;
+
+    &:hover {
+        color: rgb(22, 119, 255);
+        text-decoration: underline;
+    }
+
+}
+
+.footer__category__list__item a {
+    color: black;
+
+    &:hover {
+        color: rgb(22, 119, 255);
+        text-decoration: underline;
+    }
+
+}
+
+/* Ant table list order management */
+.ant-table-thead th {
+    background-color: white !important;
+    border-bottom: 2px solid black !important;
 }
